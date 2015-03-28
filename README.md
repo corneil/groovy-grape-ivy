@@ -28,7 +28,7 @@ This project contains a small collection of artifacts that will make it easy to 
 
 installGroovyVersion.sh and loadDeps.sh uses [gvm](http://gvmtool.net) to install and switch to different versions of Groovy.
 
-    ```Bash
+    ```bash
     curl -s get.gvmtool.net | bash
     git clone https://github.com/corneil/groovy-grape-ivy.git groovy-grape-ivy
     cd groovy-grape-ivy
