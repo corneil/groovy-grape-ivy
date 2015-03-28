@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+<info organisation="3rdparty" module="tools" status="release" revision="default" />
+<dependencies>
+<dependency org="3rdparty" name="corba.jacorb" rev="2.3.1" />
+<dependency org="3rdparty" name="logging.slf4j" rev="1.7.5" />
+</dependencies>
+
+</ivy-module>

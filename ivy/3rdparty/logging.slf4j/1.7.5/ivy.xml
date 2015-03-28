@@ -1,0 +1,12 @@
+<ivy-module version="1.4">
+  <info organisation="3rdparty" module="logging.slf4j" status="release" revision="1.7.5"/>
+  <publications>
+    <artifact name="slf4j-api" ext="jar"/>
+    <artifact name="slf4j-log4j12" ext="jar"/>
+    <artifact name="jcl-over-slf4j" ext="jar"/>
+    <artifact name="jul-to-slf4j" ext="jar"/>
+  </publications>
+  <dependencies>
+    <dependency org="3rdparty" name="logging.log4j" rev="1.2.14"/>
+  </dependencies>
+</ivy-module>

@@ -1,0 +1,15 @@
+<ivysettings>
+    <settings validate="true" defaultResolver="downloadGrapes"/>
+    <caches useOrigin="true">
+      <cache name="cachedGrapes"  basedir="${user.dir}/.grapes" />
+    </caches> 
+    <resolvers allownomd="false" validate="true" checkconsistency="true" descriptor="required">
+        <chain name="downloadGrapes">
+            <filesystem local="true" name="localIvy">
+                <ivy pattern="${user.dir}/ivy/[organization]/[module]/[revision]/ivy.xml"/>
+                <artifact pattern="${user.dir}/ivy/[organization]/[module]/[revision]/[artifact].[ext]"/>
+            </filesystem>     
+        </chain>
+      </resolvers>
+</ivysettings>
+

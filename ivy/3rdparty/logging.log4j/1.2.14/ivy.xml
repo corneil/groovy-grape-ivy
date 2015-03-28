@@ -1,0 +1,14 @@
+<?xml-stylesheet type="text/xsl" href="http://www.ivyrep.org/ivy-doc.xsl"?>
+
+<ivy-module version="1.4">
+
+  <info organisation="3rdparty" module="logging.log4j" status="release" revision="1.2.14"/>
+
+  <publications>
+    <artifact name="log4j" ext="jar"/>
+  </publications>
+
+  <dependencies>
+  </dependencies>
+
+</ivy-module>
