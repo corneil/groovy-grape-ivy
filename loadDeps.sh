@@ -13,9 +13,23 @@ do
         groovy $ENS_OPTIONS ensureDependencies.groovy > output-$version.log
         if [[ $? != 0 ]]
         then
-            echo "Error with version $version"
+            echo "Error #1 with version $version"
         else
-            echo "Success with version $version"
+            echo "Success #1 with version $version"
+        fi
+        groovy $ENS_OPTIONS ensureDependencies2.groovy >> output-$version.log
+        if [[ $? != 0 ]]
+        then
+            echo "Error #2 with version $version"
+        else
+            echo "Success #2 with version $version"
+        fi
+        groovy $ENS_OPTIONS ensureDependencies3.groovy >> output-$version.log
+        if [[ $? != 0 ]]
+        then
+            echo "Error #3 with version $version"
+        else
+            echo "Success #3 with version $version"
         fi
     else
         echo "Expected $version in $groovyVersion"
