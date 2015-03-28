@@ -36,4 +36,4 @@ installGroovyVersion.sh and loadDeps.sh uses [gvm](http://gvmtool.net) to instal
     ./loadDeps.sh
     ```
     
-Each version create a separate output file logging grape and ivy activity.    
+Each version creates a separate output file logging grape and ivy activity.    
