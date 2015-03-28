@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-IVY_PREFIX=/opt/apache-ivy
+IVY_PREFIX=apache-ivy
 for version in "2.2.0" "2.3.0"  "2.4.0"
 do
     rm -rf grapeIvy

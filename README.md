@@ -37,3 +37,7 @@ installGroovyVersion.sh and loadDeps.sh uses [gvm](http://gvmtool.net) to instal
     ```
     
 Each version creates a separate output file logging grape and ivy activity.    
+
+To show that ivy itself seems not be the origin of the problem I created a script ivyTest.sh that will resolve and retrieve the artifacts from the same local repo using the same settings files.
+You will need to download and extract the binary with dependencies distributions of Ivy 2.2.0, 2.3.0 and 2.4.0 into the current folder. If you want to extract them somewhere else modify testIvy.sh to reflect that location.
+
