@@ -2,7 +2,6 @@
 import groovy.grape.Grape
 try {
     println 'Ensure loading of dependencies'
-    Grape.grab(group: '3rdparty', module: 'tools', version: 'default')
     Grape.grab(group: '3rdparty', module: 'corba.jacorb', version: '2.3.1')
     Grape.grab(group: '3rdparty', module: 'logging.slf4j', version: '1.7.5')
     println 'Dependencies loaded'
