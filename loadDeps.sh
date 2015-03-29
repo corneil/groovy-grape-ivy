@@ -31,6 +31,13 @@ do
         else
             echo "Success #3 with version $version"
         fi
+        groovy $ENS_OPTIONS ensureDependencies4.groovy >> output-$version.log
+        if [[ $? != 0 ]]
+        then
+            echo "Error #4 with version $version"
+        else
+            echo "Success #4 with version $version"
+        fi
     else
         echo "Expected $version in $groovyVersion"
     fi
